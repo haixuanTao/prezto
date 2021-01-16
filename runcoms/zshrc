@@ -10,4 +10,15 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=5'
+FZF_COMPLETION_TRIGGER=']'
+
+alias cat='batcat'
+alias zset='vim ~/.zshrc' 
+alias python='python3'
+alias cds='cd ~/Documents/STARTUP_STUDIO'
+
+export PATH=$PATH:~/miniconda3/bin
+
+plugins=(git fzf)
 # Customize to your needs...
